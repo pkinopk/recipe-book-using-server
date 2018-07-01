@@ -127,7 +127,7 @@ export class RecipeManagementService {
       });
 
     request.then((response: any) => {
-      // console.log(response.body);
+      console.log(response.body);
       this.select(response.body);
       return response;
     });
@@ -168,6 +168,7 @@ export class RecipeManagementService {
       .then((response: any) => {
         // console.log(response.body.recipes);
         this.recipes = response.body;
+        console.log(response);
         return response;
       })
       .catch(() => {});

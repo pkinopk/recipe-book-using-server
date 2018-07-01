@@ -17,6 +17,7 @@ class Ingredient {
     this.quantity = quantity;
   }
 }
+
 exports.Ingredient = Ingredient;
 
 var recipes = [
